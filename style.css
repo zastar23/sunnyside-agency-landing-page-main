@@ -50,13 +50,117 @@ Color palette Neutral:
 
 body {
 	display: grid;
-	grid-template-columns: repeat(1, 1fr);
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(30, 10rem);
+}
+
+/* Move this down later */
+footer {
+	grid-row: 20 / 22;
 }
 
 /* 
 Mobile header section
 */
+.header {
+	background-image: url(images/mobile/image-header.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	grid-row: 1 / 4;
+	padding: 1rem;
+	text-align: center;
+}
 
+.flex {
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav__list {
+	display: none;
+}
+
+.title {
+	text-align: center;
+	margin-top: 3rem;
+	margin-bottom: 2.5rem;
+	font-size: var(--step-5);
+	color: var(--white);
+	font-weight: 900;
+	text-transform: uppercase;
+	letter-spacing: 7px;
+	line-height: 1.2;
+	font-family: "Fraunces", serif;
+}
+
+.arrow__icon {
+	margin-top: 3rem;
+}
+
+#nav__toggle {
+	background-color: transparent;
+	border: transparent;
+}
 /* 
 Mobile main section
 */
+
+.main {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.egg {
+	grid-row: 1 / 3;
+}
+
+.egg__picture {
+	width: 100%;
+}
+
+.text__card {
+	text-align: center;
+	line-height: 1.5;
+	padding: 1rem;
+}
+.subtitle {
+	font-family: "Fraunces", serif;
+	font-weight: 900;
+	margin: 2rem auto;
+	font-size: var(--step-3);
+	padding: 1rem;
+	line-height: 1.2;
+}
+
+.description {
+	font-size: var(--step-0);
+	font-family: "Barlow", sans-serif;
+	opacity: 0.7;
+	margin: 1rem auto;
+}
+
+.misc__title {
+	font-family: "Fraunces", serif;
+	font-weight: 700;
+	border-bottom: 10px solid var(--yellow);
+	width: 10rem;
+	margin: 2rem auto;
+	line-height: 0.3;
+	text-transform: uppercase;
+}
+
+.red__border {
+	border-bottom: 10px solid var(--soft_red);
+}
+
+.red-cup__image {
+	width: 100%;
+}
+
+.cherry {
+	background-image: url(images/mobile/image-graphic-design.jpg);
+	background-size: cover;
+	text-align: center;
+	line-height: 1.5;
+	grid-row: 6 / 8;
+}
