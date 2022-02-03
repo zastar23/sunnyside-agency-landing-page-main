@@ -1,0 +1,22 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--step--2: clamp(0.78rem, 0.74rem + 0.22vw, 0.96rem);
+	--step--1: clamp(0.94rem, 0.87rem + 0.33vw, 1.2rem);
+	--step-0: clamp(1.13rem, 1.03rem + 0.47vw, 1.5rem);
+	--step-1: clamp(1.35rem, 1.22rem + 0.66vw, 1.88rem);
+	--step-2: clamp(1.62rem, 1.44rem + 0.9vw, 2.34rem);
+	--step-3: clamp(1.94rem, 1.7rem + 1.23vw, 2.93rem);
+	--step-4: clamp(2.33rem, 2rem + 1.66vw, 3.66rem);
+	--step-5: clamp(2.8rem, 2.35rem + 2.22vw, 4.58rem);
+}
