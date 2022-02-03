@@ -1,3 +1,4 @@
+/* CSS reset */
 html {
 	box-sizing: border-box;
 }
@@ -9,7 +10,9 @@ html {
 	margin: 0;
 	padding: 0;
 }
-
+/* 
+Typography for diferent screen sizes
+*/
 :root {
 	--step--2: clamp(0.78rem, 0.74rem + 0.22vw, 0.96rem);
 	--step--1: clamp(0.94rem, 0.87rem + 0.33vw, 1.2rem);
@@ -20,3 +23,40 @@ html {
 	--step-4: clamp(2.33rem, 2rem + 1.66vw, 3.66rem);
 	--step-5: clamp(2.8rem, 2.35rem + 2.22vw, 4.58rem);
 }
+
+/* 
+Color palette Primary: 
+*/
+
+:root {
+	--soft_red: hsl(7, 99%, 70%);
+	--yellow: hsl(51, 100%, 49%);
+	--dark_desaturated_cyan: hsl(167, 40%, 24%);
+	--dark_blue: hsl(198, 62%, 26%);
+	--dark_moderate_cyan: hsl(168, 34%, 41%);
+}
+
+/* 
+Color palette Neutral: 
+*/
+
+:root {
+	--very_dark_desaturated_blue: hsl(212, 27%, 19%);
+	--very_dark_grayish_blue: hsl(213, 9%, 39%);
+	--dark_grayish_blue: hsl(232, 10%, 55%);
+	--grayish_blue: hsl(210, 4%, 67%);
+	--white: hsl(0, 0%, 100%);
+}
+
+body {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+}
+
+/* 
+Mobile header section
+*/
+
+/* 
+Mobile main section
+*/
