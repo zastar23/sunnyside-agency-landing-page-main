@@ -51,12 +51,16 @@ Color palette Neutral:
 body {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: repeat(30, 10rem);
+	grid-template-rows: repeat(35, 10rem);
 }
 
-/* Move this down later */
+/* 
+Move this down later
+*/
+
 footer {
-	grid-row: 20 / 22;
+	grid-row: 34 / 36;
+	margin-top: 2rem;
 }
 
 /* 
@@ -162,5 +166,31 @@ Mobile main section
 	background-size: cover;
 	text-align: center;
 	line-height: 1.5;
-	grid-row: 6 / 8;
+	padding: 1rem;
 }
+
+.orange {
+	background-image: url(images/mobile/image-photography.jpg);
+	background-size: cover;
+	line-height: 1.5;
+	padding: 1rem;
+	text-align: center;
+}
+
+.picture__title {
+	margin-top: 25rem;
+	font-family: "Fraunces", serif;
+	font-weight: 900;
+	font-size: var(--step-1);
+	color: var(--dark_desaturated_cyan);
+}
+
+.picture__text {
+	margin: 1rem auto 2rem;
+	font-family: "Barlow", sans-serif;
+	color: var(--dark_desaturated_cyan);
+}
+
+/* 
+Testimonial section
+*/
