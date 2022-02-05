@@ -276,7 +276,33 @@ Mobile Footer section:
 */
 
 footer {
-	grid-row: 31;
-	margin-top: -0.5rem;
+	grid-row: 31 / 33;
+	margin-top: -2.1rem;
 	background-color: var(--dark_moderate_cyan);
+	text-align: center;
+	padding: 2rem;
 }
+
+.footer__nav {
+	margin: 2rem 0;
+}
+
+.footer__nav__list {
+	display: flex;
+	gap: 3rem;
+	justify-content: center;
+	list-style: none;
+	font-family: "Barlow", sans-serif;
+	opacity: 0.5;
+}
+
+.icons {
+	margin: 5rem 0;
+	display: flex;
+	gap: 2rem;
+	justify-content: center;
+}
+
+/* 
+Media query for desktop design:
+*/
