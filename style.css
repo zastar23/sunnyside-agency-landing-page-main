@@ -1,10 +1,6 @@
 /* CSS reset */
 html {
 	box-sizing: border-box;
-	background-image: url(images/desktop/image-photography.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
 }
 
 *,
@@ -113,6 +109,8 @@ Mobile main section
 .main {
 	display: grid;
 	grid-template-columns: 1fr;
+	width: 100%;
+	max-width: 90rem;
 }
 
 .egg {
@@ -311,9 +309,9 @@ footer {
 Media query for desktop design:
 */
 
-@media (min-width: 600px) {
+@media (min-width: 750px) {
 	body {
-		grid-template-columns: repeat(2, minmax(30rem, 1fr));
+		grid-template-columns: repeat(2, minmax(45rem, 1fr));
 	}
 
 	.header {
@@ -322,13 +320,41 @@ Media query for desktop design:
 		background-size: cover;
 	}
 
+	#nav__toggle {
+		display: none;
+	}
+
+	.nav__list {
+		display: flex;
+		gap: 4rem;
+		list-style: none;
+		font-size: var(--step-0);
+		color: var(--white);
+		align-items: center;
+		font-family: "Barlow", sans-serif;
+	}
+
+	.contact {
+		padding: 1rem 2rem;
+		border-radius: 40px;
+		font-family: "Fraunces", serif;
+		font-weight: 900;
+		border: none;
+		text-transform: uppercase;
+	}
+
+	.flex {
+		align-items: center;
+		justify-content: space-between;
+	}
+
 	.arrow__icon {
 		margin: 4rem auto 11rem;
 		width: 3rem;
 	}
 
 	.main {
-		grid-template-columns: repeat(2, minmax(30rem, 1fr));
+		grid-template-columns: repeat(2, minmax(45rem, 1fr));
 	}
 
 	.egg {
@@ -338,6 +364,11 @@ Media query for desktop design:
 
 	.egg__picture {
 		height: 100%;
+	}
+
+	.text__card {
+		width: 30rem;
+		margin: 3rem auto 0;
 	}
 
 	.grid1 {
@@ -354,10 +385,24 @@ Media query for desktop design:
 		height: 100%;
 	}
 
+	.cherry {
+		padding: 10rem;
+		font-size: var(--step-1);
+	}
+
+	.orange {
+		padding: 10rem;
+		font-size: var(--step-1);
+	}
+
+	.picture__title {
+		margin-top: 40rem;
+	}
+
 	.testimonials {
 		grid-column: span 2;
 		padding: 4rem;
-		width: 80%;
+		width: 100%;
 		margin: 0 auto;
 	}
 
@@ -370,5 +415,23 @@ Media query for desktop design:
 		grid-row: 5 / 7;
 		grid-column: span 2;
 		font-size: var(--step-2);
+	}
+}
+
+@media (min-width: 1000px) {
+	.testimonials {
+		display: block;
+		padding: 1rem;
+	}
+	.flex-for-big-screen {
+		display: flex;
+		gap: 3rem;
+		justify-content: space-between;
+		margin-bottom: 4rem;
+	}
+
+	.photos {
+		display: flex;
+		max-width: 22.5rem;
 	}
 }
