@@ -39,15 +39,24 @@
 					<img src="images/logo.svg" alt="company logo" />
 				</div>
 				<nav class="nav">
-					<button id="nav__toggle">
+					<button onclick="toggleNav()" id="nav__toggle">
 						<img
 							class="hamburger__icon"
 							src="images/icon-hamburger.svg"
 							alt="icon"
 						/>
 					</button>
-
-					<ul class="nav__list">
+					<div id="nav" class="container">
+						<ul class="nav__list__mobile">
+							<li class="nav__list__item">About</li>
+							<li class="nav__list__item">Services</li>
+							<li class="nav__list__item">Projects</li>
+							<li class="nav__list__item">
+								<button class="contact">Contact</button>
+							</li>
+						</ul>
+					</div>
+					<ul class="nav__list__desktop">
 						<li class="nav__list__item">About</li>
 						<li class="nav__list__item">Services</li>
 						<li class="nav__list__item">Projects</li>
@@ -239,5 +248,6 @@
 				<a href="https://github.com/zastar23">Florin Porut</a>.
 			</div>
 		</footer>
+		<script src="script.js"></script>
 	</body>
 </html>

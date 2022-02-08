@@ -1,6 +1,8 @@
 /* CSS reset */
 html {
 	box-sizing: border-box;
+	background-image: url(images/desktop/html-background.jpg);
+	background-size: cover;
 }
 
 *,
@@ -76,9 +78,9 @@ Mobile header section
 	justify-content: space-between;
 }
 
-.nav__list {
+/* .nav__list {
 	display: none;
-}
+} */
 
 .title {
 	text-align: center;
@@ -102,6 +104,45 @@ Mobile header section
 	background-color: transparent;
 	border: transparent;
 }
+
+/* 
+Navigation for mobile:
+*/
+.container {
+	position: relative;
+	display: none;
+}
+.nav__list__mobile {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	list-style: none;
+	position: absolute;
+	right: 2vw;
+	top: 2vh;
+	background-color: white;
+	padding: 3rem 6rem;
+	font-family: "Barlow", sans-serif;
+}
+
+.nav__list__desktop {
+	display: none;
+}
+
+.nav__list__item {
+	opacity: 0.7;
+}
+
+.contact {
+	font-family: "Fraunces", serif;
+	padding: 0.5rem 1rem;
+	text-transform: uppercase;
+	background-color: var(--yellow);
+	opacity: 1;
+	border-radius: 40px;
+	border: none;
+}
+
 /* 
 Mobile main section
 */
@@ -111,6 +152,7 @@ Mobile main section
 	grid-template-columns: 1fr;
 	width: 100%;
 	max-width: 90rem;
+	background-color: var(--white);
 }
 
 .egg {
@@ -200,6 +242,7 @@ Mobile Testimonial section:
 	gap: 4rem;
 	text-align: center;
 	padding: 2rem;
+	background-color: var(--white);
 }
 
 .testimonials__title {
@@ -222,7 +265,7 @@ Mobile Testimonial section:
 .card__text {
 	font-family: "Barlow", sans-serif;
 	color: var(--very_dark_grayish_blue);
-	font-size: var(--step-0);
+	font-size: var(--step-1);
 	margin-bottom: 2rem;
 }
 
@@ -230,11 +273,13 @@ Mobile Testimonial section:
 	font-family: "Fraunces", serif;
 	font-weight: 900;
 	margin-bottom: 0.5rem;
+	font-size: var(--step-1);
 }
 
 .ocupation {
 	font-family: "Barlow", sans-serif;
 	opacity: 0.6;
+	font-size: var(--step-0);
 }
 
 /* 
@@ -324,7 +369,11 @@ Media query for desktop design:
 		display: none;
 	}
 
-	.nav__list {
+	.container {
+		display: none;
+	}
+
+	.nav__list__desktop {
 		display: flex;
 		gap: 4rem;
 		list-style: none;
