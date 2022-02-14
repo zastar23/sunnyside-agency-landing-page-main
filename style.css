@@ -484,3 +484,30 @@ Media query for desktop design:
 		max-width: 22.5rem;
 	}
 }
+
+/* 
+Active-states:
+*/
+
+.contact:hover {
+	color: var(--white);
+	cursor: pointer;
+}
+
+.misc__title:hover {
+	cursor: pointer;
+}
+
+.red__border:hover {
+	cursor: pointer;
+}
+
+.footer-nav__list__item:hover {
+	color: white;
+	cursor: pointer;
+}
+
+.icon:hover {
+	background-color: white;
+	cursor: pointer;
+}
